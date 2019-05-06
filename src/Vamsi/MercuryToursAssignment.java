@@ -25,38 +25,38 @@ public class MercuryToursAssignment {
 		driver.findElement(By.linkText("REGISTER")).click();
 		
 		WebElement First_Name = driver.findElement(By.name("firstName"));
-		First_Name.sendKeys("asdf");
+		First_Name.sendKeys("John");
 		
 		WebElement Last_Name = driver.findElement(By.name("lastName"));
-		Last_Name.sendKeys("asdf");
+		Last_Name.sendKeys("Cena");
 		
 
 		WebElement Phone = driver.findElement(By.name("phone"));
-		Phone.sendKeys("asdf");
+		Phone.sendKeys("165897423");
 		
 		WebElement Email = driver.findElement(By.name("userName"));
 		Email.sendKeys("asdf@gmail.com");
 
 		WebElement Address = driver.findElement(By.name("address1"));
-		Address.sendKeys("asdf");
+		Address.sendKeys("Manhattan");
 		
 		WebElement City = driver.findElement(By.name("city"));
-		City.sendKeys("asdf");
+		City.sendKeys("NewYorkCity");
 		
 		WebElement State = driver.findElement(By.name("state"));
-		State.sendKeys("asdf");
+		State.sendKeys("NewYork");
 		
 		WebElement PostalCode = driver.findElement(By.name("postalCode"));
-		PostalCode.sendKeys("asdf");
+		PostalCode.sendKeys("123564");
 		
 		WebElement UserName = driver.findElement(By.id("email"));
-		UserName.sendKeys("asdf");
+		UserName.sendKeys("JohnCena");
 		
 		WebElement Password = driver.findElement(By.name("password"));
-		Password.sendKeys("asdf");
+		Password.sendKeys("John89");
 		
 		WebElement ConfirmPW = driver.findElement(By.name("confirmPassword"));
-		ConfirmPW.sendKeys("asdf");
+		ConfirmPW.sendKeys("John89");
 		
 		Thread.sleep(5000);
 		
