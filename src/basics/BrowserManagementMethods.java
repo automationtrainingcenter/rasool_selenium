@@ -35,6 +35,7 @@ public class BrowserManagementMethods {
 		// maximize() - it will maximizes the browser window
 		window.maximize();
 		Thread.sleep(2000);
+//		driver.manage().window().maximize();
 
 		// fullScreen() - F11 mode
 		window.fullscreen();
