@@ -1,4 +1,4 @@
-package com.task;
+package assignments;
 
 
 import org.openqa.selenium.By;
