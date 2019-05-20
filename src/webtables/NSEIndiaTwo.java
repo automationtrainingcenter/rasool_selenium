@@ -7,11 +7,12 @@ import org.openqa.selenium.WebElement;
 
 import utilitiles.Browser;
 import utilitiles.BrowserHelper;
+import utilitiles.JavaScriptHelper;
 
 public class NSEIndiaTwo extends BrowserHelper{
 	
 	public static void main(String[] args) {
-		String companyCode = "YESBANK";
+		String companyCode = "INFY";
 		openBrowser(Browser.CHROME, "https://www.nseindia.com/live_market/dynaContent/live_watch/pre_open_market/pre_open_market.htm");
 		WebElement tBody = driver.findElement(By.cssSelector("#preOpenNiftyTab>tbody"));
 		// locate all the rows inside the table body using tr tag
@@ -21,7 +22,10 @@ public class NSEIndiaTwo extends BrowserHelper{
 			// locate cell in every row using td tag
 			List<WebElement> cells = rows.get(i).findElements(By.tagName("td"));
 			if(cells.get(0).getText().equals(companyCode)) {
-				cells.get(0).findElement(By.tagName("a")).click();
+				WebElement link = cells.get(0).findElement(By.tagName("a"));
+				JavaScriptHelper.bringElementToView(driver, link);
+				sleep(2000);
+				link.click();
 				break;
 			}
 		}
