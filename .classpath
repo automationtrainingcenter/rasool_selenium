@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/mongodb-driver-3.0.4.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/mongodb-driver-core-3.0.4.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/mysql-connector-java-8.0.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
